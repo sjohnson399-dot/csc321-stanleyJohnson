@@ -24,7 +24,7 @@ public class sjohnson4
                                 System.out.println("Choice 3");
                                 break;
                         case 4:
-                                System.out.println("Choice 4");
+                                System.out.println("Choice 4d");
                                 break;
                         default:
                                 System.out.println("Choice out of range");
