@@ -5,11 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double hypCalc(double base, double height)
-{
-        return hypot(base, height);
+double hypCalc(double base, double height);
 
-}
 
 int main(void)
 {
@@ -21,9 +18,13 @@ int main(void)
 	printf("enter height: "); 
 	scanf("%lf", &height);
 
-	printf("value of the hypotenuse is %f\n", hypCalc(base, height));
+	printf("value of the hypotenuse is %.2f\n", hypCalc(base, height));
 
 	return EXIT_SUCCESS;
 }
 
+double hypCalc(double base, double height)
+{
+        return sqrt(pow(base, 2) + pow(height, 2));
 
+}
